@@ -1,3 +1,6 @@
 [submodule "Spirit-Base"]
 	path = Spirit-Base
 	url = https://github.com/Matthieu-Beauchamp/Spirit-Base
+[submodule "Spirit-Math"]
+	path = Spirit-Math
+	url = https://github.com/Matthieu-Beauchamp/Spirit-Math

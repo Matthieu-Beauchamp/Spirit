@@ -46,6 +46,7 @@ endmacro()
 # No matter their values, projects including Spirit will not see the dev targets
 # unless they define the options themselves
 spirit_subdirectory(Base TRUE)
+spirit_subdirectory(Math TRUE)
 
 target_link_libraries(spirit INTERFACE 
     spirit-base
