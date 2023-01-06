@@ -22,6 +22,8 @@ if(hasParent)
     set(SPIRIT_DEV_BUILD FALSE)
 else() # Root project -> dev build
     set(SPIRIT_DEV_BUILD TRUE)
+    set(SPIRIT_BASE_BUILD_CATCH TRUE)
+    set(SPIRIT_BASE_BUILD_CELERO TRUE)
 endif()
 
 # Assumes that modules folder are named: Spirit-Module,
@@ -35,6 +37,7 @@ macro(spirit_subdirectory moduleName devMode)
 
     if (${devMode} AND SPIRIT_DEV_BUILD)
         set(${varPrefix}_BUILD_TESTS TRUE)
+        set(${varPrefix}_BUILD_BENCHMARKS TRUE)
         set(${varPrefix}_BUILD_DOCS TRUE)
         set(${varPrefix}_BUILD_EXAMPLES TRUE)
     endif()
